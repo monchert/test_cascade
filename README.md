@@ -5,15 +5,19 @@ For more information, please see the publication: Identification of critical con
 
 Last update: 2019-04-10
 This repository is administered by Sung Ho Yoon (syoon@konkuk.ac.kr), Department of Bioscience and Biotechnology, Konkuk University, Seoul 05029, Republic of Korea
-Installation
+
+### Installation
 Required Software:
-•	A functional Matlab installation (R2015a or higher).
+* A functional Matlab installation (R2015a or higher).
+
 Required MATLAL code file:
-•	in_degrees.m : For calculating the in-degree of each node
-•	cascade.m : For calculating the cascade set of a given node
+* in_degrees.m : For calculating the in-degree of each node
+* cascade.m : For calculating the cascade set of a given node
+
 Example data file:
-•	directed_adjacency_matrix_of_ecoli_reaction_graph.mat : Adjacency matrix of the reaction graph converted from the metabolic network model of E.coli (iJO1366) in Matlab format
-•	rxn_list.mat : Reaction list of the E. coli reaction graph corresponding to the adjacency matrix in Matlab format
+* directed_adjacency_matrix_of_ecoli_reaction_graph.mat : Adjacency matrix of the reaction graph converted from the metabolic network model of E.coli (iJO1366) in Matlab format
+* rxn_list.mat : Reaction list of the E. coli reaction graph corresponding to the adjacency matrix in Matlab format
+
 % Examples of calculating cascade numbers with matlab codes
 % Start Matlab
 % Locate two files, "in_degrees.m" and "cascade.m", in the same folder and set working directory to the foler in matlab.
@@ -45,3 +49,8 @@ for i=1:1251
 	list_of_cascade_number(1,i)=length(affected_nodes);
 end 
 list_of_cascade_number
+
+### Contributors
+* Eun-Youn Kim (eunykim@hanbat.ac.kr), Hanbat National University, Daejeon, Republic of Korea
+* Daniel Ashlock (dashlock@uoguelph.ca), University of Guelph, Ontario, Canada
+* Sung Ho Yoon (syoon@konkuk.ac.kr), Konkuk University, Seoul, Republic of Korea
