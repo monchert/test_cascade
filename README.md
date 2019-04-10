@@ -7,20 +7,20 @@ Last update: 2019-04-10
 This repository is administered by Sung Ho Yoon (syoon@konkuk.ac.kr), Department of Bioscience and Biotechnology, Konkuk University, Seoul 05029, Republic of Korea
 
 ## Installation
-Required software:
+### Required software:
 * A functional Matlab installation (R2015a or higher).
 
-Required MATLAL code files (Locate following two files in the same folder which is set to be the working directory in MATLAB.
+### Required MATLAL source files (Locate following two files in the same folder which is set to be the working directory in MATLAB.
 * in_degrees.m : For calculating the in-degree of each node
 * cascade.m : For calculating the cascade set of a given node
 
-Example data files:
+### Example data files:
 * directed_adjacency_matrix_of_ecoli_reaction_graph.mat : Adjacency matrix of the reaction graph converted from the metabolic network model of E.coli (iJO1366) in Matlab format
 * rxn_list.mat : Reaction list of the E. coli reaction graph corresponding to the adjacency matrix in Matlab format
 
-### Examplified MATLAB codes for calculating cascade numbers
+## Examples of MATLAB codes for calculating cascade numbers
 
-* [Example 1] toy model in the paper "Identification of critical connectors in local connectivity and between modules in the directed biological network" 
+### [Example 1] toy model in the paper "Identification of critical connectors in local connectivity and between modules in the directed biological network" 
 
 % 1-1. To get a cascade number of a specific node: 
 
@@ -38,7 +38,7 @@ for i=1:7
 end 
 list_of_cascade_number
 
-* [Example 2] To get the list of the cascade numbers of all nodes of the reaction graph converted from the metabolic network model of E.coli (iJO1366). 
+### [Example 2] To get the list of the cascade numbers of all nodes of the reaction graph converted from the metabolic network model of E.coli (iJO1366). 
 
 load('rxn_list.mat');
 load('directed_adjacency_matrix_of_ecoli_reaction_graph.mat')
@@ -49,7 +49,7 @@ for i=1:1251
 end 
 list_of_cascade_number
 
-### Contributors
+## Contributors
 * Eun-Youn Kim (eunykim@hanbat.ac.kr), Hanbat National University, Daejeon, Republic of Korea
 * Daniel Ashlock (dashlock@uoguelph.ca), University of Guelph, Ontario, Canada
 * Sung Ho Yoon (syoon@konkuk.ac.kr), Konkuk University, Seoul, Republic of Korea
