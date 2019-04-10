@@ -23,7 +23,7 @@ This repository is administered by Sung Ho Yoon (syoon@konkuk.ac.kr), Department
 ## Examples of MATLAB codes for calculating cascade numbers
 
 ### [Example 1] 
-Toy model in the paper "Identification of critical connectors in local connectivity and between modules in the directed biological network" 
+% Toy model in the paper "Identification of critical connectors in local connectivity and between modules in the directed biological network" 
 
 % 1-1. To get a cascade number of a specific node: 
 
@@ -36,7 +36,9 @@ affected_nodes = cascade(G,1)
 cascade_number=length(affected_nodes)
 
  
+
 % 1-2. To get all the cascade numbers of all nodes: 
+
 
 list_of_cascade_number=zeros(1,7);
 
@@ -50,7 +52,8 @@ end
 
 list_of_cascade_number
 
-### [Example 2] To get the list of the cascade numbers of all nodes of the reaction graph converted from the metabolic network model of E.coli (iJO1366). 
+### [Example 2] 
+% To get the list of the cascade numbers of all nodes of the reaction graph converted from the metabolic network model of E.coli (iJO1366). 
 
 load('rxn_list.mat');
 
