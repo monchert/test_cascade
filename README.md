@@ -5,7 +5,7 @@ For more information, please see the publication: Identification of critical con
 
 Last update: 2019-04-10
 
-This repository is administered by Sung Ho Yoon (syoon@konkuk.ac.kr), Department of Bioscience and Biotechnology, Konkuk University, Seoul 05029, Republic of Korea
+This repository is administered by Sung Ho Yoon (syoon@konkuk.ac.kr), Department of Bioscience and Biotechnology, Konkuk University, Seoul, Republic of Korea
 
 ## Installation
 ### Required software:
