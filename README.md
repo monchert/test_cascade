@@ -27,6 +27,7 @@ Toy model in the paper "Identification of critical connectors in local connectiv
 % 1-1. To get a cascade number of a specific node: 
 
 G = zeros(7,7);
+
 G(1,2)=1; G(1,3)=1; G(1,4)=1; G(2,4)=1; G(3,4)=1; G(4,5)=1; G(5,6)=1; G(6,7)=1; G(7,6)=1;
 affected_nodes = cascade(G,1)
 cascade_number=length(affected_nodes)
